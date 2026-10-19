@@ -74,16 +74,6 @@ A Chrome-dino-style runner game for Arduino with a TFT LCD touch screen. Jump ov
 - `turtle()`, `panda()`, `elephant()` draw each character from LCD primitives; `choiceUser()` picks the one matching `types`, with jump/slide pose variants.
 - `user.ino` is the selection screen; the choice is kept in `types`.
 
-
-## Setup
-
-1. Copy the three folders in `library/` into your Arduino `libraries` directory. Because of the Arduino's limited program/data memory, the bundled libraries have been modified: unneeded LCD drivers are disabled, so only the driver for the target display is kept.
-2. Open the project in the Arduino IDE (sketch: `project2.ino`).
-3. Adjust `TS_MINX/MAXX/MINY/MAXY` in `_define.h` if touch is misaligned.
-4. Select your board and port, then upload.
-
-To reset the leaderboard, uncomment `initRanking();` in `setup()` for one upload.
-
 ## Menu
 
 - **Start** – play the game
